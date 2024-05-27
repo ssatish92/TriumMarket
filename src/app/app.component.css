@@ -1,0 +1,35 @@
+/* Ensure the html and body take the full height */
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent the body from scrolling */
+  }
+  
+  /* Container that will handle scrolling */
+  .content-container {
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Adjust padding for the scrollbar */
+  }
+  
+  /* Optional: Style the scrollbar (for webkit browsers) */
+  .content-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .content-container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  
+  .content-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  

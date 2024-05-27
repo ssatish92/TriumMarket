@@ -1,0 +1,44 @@
+<head>
+  <style>
+    .short-paragraph {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      color: white;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/latest/css/all.min.css">
+<div class="p-1 text-center bg-image rounded-s-3xl" style="background-image: url('https://images.pexels.com/photos/1181408/pexels-photo-1181408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); height: 600px; background-size: cover; background-position: center;">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white " >
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h1 class="mb-3" style="font-size: 2.5em;">Strategize with Confidence, Execute with Excellence
+      </h1>
+      <div class="container">
+        <p id="short-paragraph" class="short-paragraph">
+          For over a decade, we've guided companies from promising startups to SMBs. 
+          Our team has collaborated with dozens of organizations, leading them through periods of unprecedented growth and transformation.
+          We've seen it all and done it all when it comes to strategic planning and market positioning. Our seasoned advisors identify unseen opportunities and chart competitive advantages. We confront dilemmas using research-backed insights you can bank on. 
+          Whether you require direction realizing ambitions, separating from rivals, or venturing into new territory, we are tried and tested navigators. Our individually tailored strategies integrate seamlessly into operations to yield measurable business growth. 
+        </p>
+        <button class="btn btn-primary " id="nav-link" href="#about" >Read More</button>
+      </div>
+    
+      <script>
+        function showFullText() {
+          var paragraph = document.getElementById('short-paragraph');
+          paragraph.style.display = '-webkit-box';
+          paragraph.style.webkitLineClamp = 'unset';
+          paragraph.style.overflow = 'visible';
+          document.getElementById('read-more-btn').style.display = 'none';
+        }
+      </script>
+    </div>
+  </div>
+</div>
+</body>

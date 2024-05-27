@@ -25,9 +25,25 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
+                            
+
+
             ],
-            "scripts": [],
+            "scripts": [
+                  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+                  "node_modules/@popperjs/core/dist/umd/popper.min.js",
+                  "node_modules/jquery/dist/jquery.slim.js",
+                  "node_modules/jquery/dist/jquery.slim.min.js",
+                  "node_modules/jquery/dist/jquery.min.js",
+                  "node_modules/jquery/dist/jquery.js"
+                  
+
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -89,6 +105,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
